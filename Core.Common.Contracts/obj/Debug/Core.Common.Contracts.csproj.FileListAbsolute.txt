@@ -1,0 +1,4 @@
+D:\EndToEndApp\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.dll
+D:\EndToEndApp\Core.Common.Contracts\bin\Debug\Core.Common.Contracts.pdb
+D:\EndToEndApp\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.dll
+D:\EndToEndApp\Core.Common.Contracts\obj\Debug\Core.Common.Contracts.pdb

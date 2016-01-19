@@ -1,0 +1,7 @@
+D:\EndToEndApp\CarRental.Business.Entities\bin\Debug\CarRental.Business.Entities.dll
+D:\EndToEndApp\CarRental.Business.Entities\bin\Debug\CarRental.Business.Entities.pdb
+D:\EndToEndApp\CarRental.Business.Entities\bin\Debug\Core.Common.dll
+D:\EndToEndApp\CarRental.Business.Entities\bin\Debug\Core.Common.pdb
+D:\EndToEndApp\CarRental.Business.Entities\obj\Debug\CarRental.Business.Entities.csprojResolveAssemblyReference.cache
+D:\EndToEndApp\CarRental.Business.Entities\obj\Debug\CarRental.Business.Entities.dll
+D:\EndToEndApp\CarRental.Business.Entities\obj\Debug\CarRental.Business.Entities.pdb

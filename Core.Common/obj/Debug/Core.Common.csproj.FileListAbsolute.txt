@@ -1,0 +1,4 @@
+D:\EndToEndApp\Core.Common\bin\Debug\Core.Common.dll
+D:\EndToEndApp\Core.Common\bin\Debug\Core.Common.pdb
+D:\EndToEndApp\Core.Common\obj\Debug\Core.Common.dll
+D:\EndToEndApp\Core.Common\obj\Debug\Core.Common.pdb
