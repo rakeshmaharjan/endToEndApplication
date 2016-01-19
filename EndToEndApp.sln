@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{BAA07F08-8C39-4557-817F-EC0E290BC1E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{A692C28C-DE06-408F-A7B4-085426A0E090}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CA8ACB7B-A1D6-4395-B00B-087FCA5682DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5DE8DED3-99CF-48CD-B6C1-39676E2D113A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Business.Entities", "CarRental.Business.Entities\CarRental.Business.Entities.csproj", "{31C7186A-C10E-456E-9D0A-B2F66EB8EDDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31C7186A-C10E-456E-9D0A-B2F66EB8EDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C7186A-C10E-456E-9D0A-B2F66EB8EDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C7186A-C10E-456E-9D0A-B2F66EB8EDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C7186A-C10E-456E-9D0A-B2F66EB8EDDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31C7186A-C10E-456E-9D0A-B2F66EB8EDDC} = {BAA07F08-8C39-4557-817F-EC0E290BC1E8}
+	EndGlobalSection
+EndGlobal
