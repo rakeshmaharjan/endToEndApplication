@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using Core.Common.Core;
+using Core.Common.Contracts;
 
 
 namespace CarRental.Business.Entities
@@ -14,7 +15,7 @@ namespace CarRental.Business.Entities
     //serialization must be decorated with datamember
 
     [DataContract]
-    public class Car : EntityBase
+    public class Car : EntityBase, IIdentifiableEntity
     {
         [DataMember]
         public int CarId { get; set; }
@@ -33,7 +34,7 @@ namespace CarRental.Business.Entities
 
         [DataMember]
         public bool CurrentlyRented { get; set; }
-
+ 
 
         // IIdentifiableEntity Members
         public int EntityId

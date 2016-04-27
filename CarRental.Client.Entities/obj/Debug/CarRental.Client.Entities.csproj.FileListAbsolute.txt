@@ -1,6 +1,11 @@
+D:\EndToEndApp\CarRental.Client.Entities\obj\Debug\CarRental.Client.Entities.csprojResolveAssemblyReference.cache
 D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\CarRental.Client.Entities.dll
 D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\CarRental.Client.Entities.pdb
+D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\Core.Common.Contracts.dll
+D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\Core.Common.dll
 D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\FluentValidation.dll
+D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\Core.Common.Contracts.pdb
+D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\Core.Common.pdb
 D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\FluentValidation.pdb
 D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\cs\FluentValidation.resources.dll
 D:\EndToEndApp\CarRental.Client.Entities\bin\Debug\da\FluentValidation.resources.dll
