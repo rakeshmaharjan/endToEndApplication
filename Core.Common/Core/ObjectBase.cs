@@ -10,15 +10,27 @@ using System.Text;
 using Core.Common.Extensions;
 using Core.Common.Utils;
 using Core.Common.Contracts;
+using FluentValidation;
+using FluentValidation.Results;
 
 namespace Core.Common.Core
 {
-    public abstract class ObjectBase : INotifyPropertyChanged, IDirtyCapable
+    public abstract class ObjectBase : INotifyPropertyChanged, IDirtyCapable,IDataErrorInfo
     {
+        public ObjectBase()
+        {
+            _validator = GetValidator();
+            Validate();
+        }
+
+        protected IValidator _validator = null;
+        protected IEnumerable<ValidationFailure> _ValidationErrors = null;
+
+
         private event PropertyChangedEventHandler _PropertyChanged;
 
         List<PropertyChangedEventHandler> _PropertyChangedSubscribers = new List<PropertyChangedEventHandler>();
-        
+
         protected bool _IsDirty = false;
 
         public event PropertyChangedEventHandler PropertyChanged
@@ -69,7 +81,7 @@ namespace Core.Common.Core
         }
 
 
-       // bool _IsDirty;
+        // bool _IsDirty;
 
         //public bool IsDirty
         //{
@@ -197,5 +209,71 @@ namespace Core.Common.Core
 
         #endregion
 
+
+        #region validation
+
+        protected virtual IValidator GetValidator()
+        {
+            return null;
+        }
+
+        [NotNavigable]
+        public IEnumerable<ValidationFailure> ValidationErrors
+        {
+            get { return _ValidationErrors; }
+            set { }
+        }
+
+        public void Validate()
+        {
+            if (_validator != null)
+            {
+                ValidationResult results = _validator.Validate(this);
+                _ValidationErrors = results.Errors;
+            }
+        }
+
+        [NotNavigable]
+        public virtual bool IsValid
+        {
+            get
+            {
+                if (_ValidationErrors != null && _ValidationErrors.Count() > 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }
+
+        string IDataErrorInfo.Error
+        {
+            get { return string.Empty; }
+        }
+
+        string IDataErrorInfo.this[string columnName]
+        {
+            get 
+            {
+                StringBuilder errors = new StringBuilder();
+
+                if (_ValidationErrors !=null && _ValidationErrors.Count()>0)
+                {
+                    foreach (ValidationFailure validationError in _ValidationErrors)
+                    {
+                        if (validationError.PropertyName == columnName)
+                        {
+                            errors.AppendLine(validationError.ErrorMessage);
+                        }
+                    }
+                }
+                return errors.ToString();
+            }
+        }
+
+        #endregion
     }
 }

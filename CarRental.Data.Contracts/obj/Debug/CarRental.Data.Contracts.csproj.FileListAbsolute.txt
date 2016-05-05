@@ -1,0 +1,5 @@
+D:\EndToEndApp\CarRental.Data.Contracts\bin\Debug\CarRental.Data.Contracts.dll
+D:\EndToEndApp\CarRental.Data.Contracts\bin\Debug\CarRental.Data.Contracts.pdb
+D:\EndToEndApp\CarRental.Data.Contracts\obj\Debug\CarRental.Data.Contracts.csprojResolveAssemblyReference.cache
+D:\EndToEndApp\CarRental.Data.Contracts\obj\Debug\CarRental.Data.Contracts.dll
+D:\EndToEndApp\CarRental.Data.Contracts\obj\Debug\CarRental.Data.Contracts.pdb
